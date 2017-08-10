@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { itemsFetchData } from '../actions/items';
+import {Navbar,Nav,NavItem,NavDropdown,MenuItem} from 'react-bootstrap';
 
 class ItemList extends Component {
     componentDidMount() {
@@ -17,13 +18,9 @@ class ItemList extends Component {
         }
 
         return (
-            <ul>
-                {this.props.items.map((item) => (
-                    <li key={item.id}>
-                        {item.label}
-                    </li>
-                ))}
-            </ul>
+    <div>
+
+  </div>
         );
     }
 }
